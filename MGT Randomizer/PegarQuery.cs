@@ -12,8 +12,6 @@ namespace MGT_Randomizer
     {
         private string Comando;
         public static int X { get; private set; }
-        public static int B
-        { get; private set; }
         public void ExecutarQuery(int v)
         {
             //****************Lista de variaveis****************
