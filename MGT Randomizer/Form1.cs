@@ -23,9 +23,7 @@ namespace MGT_Randomizer
         private void Randomize_Click(object sender, EventArgs e)
         {
             if (SenhaDatabase.SenhasBD(Senha.Text) != true) { return; }
-            if (PegarQuery.X > 0) { Atualizar(); }
-            LinkDownload();
-            CriarTexto();
+            if (PegarQuery.X > 0) { Atualizar(); LinkDownload(); CriarTexto(); }
         }
         private void Atualizar()
         {
