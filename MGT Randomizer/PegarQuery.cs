@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,10 +42,10 @@ namespace MGT_Randomizer
             {
                 ListaNegra = File.ReadAllLines(Form1.Caminho +
                     @"\Blacklist.txt").ToList(); //Leitor do Blacklist.txt
-                resultado = num_jogo.Except(ListaNegra).ToList();//Exclusão das entries num_jogo que possui na Blacklist
             }
-            else { File.CreateText(Form1.Caminho + @"Blacklist.txt"); } //Cria Blacklist.txt
+            else { File.CreateText(Form1.Caminho + @"/Blacklist.txt").Close(); } //Cria Blacklist.txt
             //********************************************************************
+            resultado = num_jogo.Except(ListaNegra).ToList();//Exclusão das entries num_jogo que possui na Blacklist
             Random rnd = new Random(); //Método de aleatoriedade do .net
             if (resultado.Any())//Se resultado não for nulo
             {
