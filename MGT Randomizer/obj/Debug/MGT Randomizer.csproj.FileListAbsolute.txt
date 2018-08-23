@@ -1,0 +1,30 @@
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Data.mdf
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Data_log.ldf
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\MGT Randomizer.exe.config
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\MGT Randomizer.exe
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\MGT Randomizer.pdb
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Auth.dll
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Core.dll
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.dll
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Drive.v3.dll
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.pdb
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.xml
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Auth.xml
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Core.pdb
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Core.xml
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Drive.v3.pdb
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Google.Apis.Drive.v3.xml
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\obj\Debug\MGT Randomizer.csprojAssemblyReference.cache
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\obj\Debug\MGT_Randomizer.Form1.resources
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\obj\Debug\MGT_Randomizer.Properties.Resources.resources
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\obj\Debug\MGT Randomizer.csproj.GenerateResource.cache
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\obj\Debug\MGT Randomizer.csproj.CoreCompileInputs.cache
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\obj\Debug\MGT Randomizer.csproj.CopyComplete
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\obj\Debug\MGT Randomizer.exe
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\obj\Debug\MGT Randomizer.pdb
+C:\Users\Darth Sonic\Desktop\MGT-Randomizer-master\MGT Randomizer\bin\Debug\client_secret.json

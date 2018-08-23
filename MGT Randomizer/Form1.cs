@@ -23,7 +23,9 @@ namespace MGT_Randomizer
         private void Randomize_Click(object sender, EventArgs e)
         {
             if (SenhaDatabase.SenhasBD(Senha.Text) != true) { return; }
-            if (PegarQuery.X > 0) { Atualizar(); LinkDownload(); CriarTexto(); }
+            if (PegarQuery.X > 0) { Atualizar(); }
+            LinkDownload();
+            CriarTexto();
         }
         private void Atualizar()
         {
@@ -47,7 +49,7 @@ namespace MGT_Randomizer
         {
             if (CheckTxt.Checked && !string.IsNullOrEmpty(jogoTextBox.Text))
             {
-                string path = AppDomain.CurrentDomain.BaseDirectory;
+                string path = Caminho;
                 File.WriteAllText(path + @"\OBS.Jogo.txt", jogoTextBox.Text);
                 File.WriteAllText(path + @"\OBS.Tempo.txt", tempoTextBox.Text);
                 File.WriteAllText(path + @"\OBS.Objetivo.txt", objetivoTextBox.Text);
@@ -71,6 +73,12 @@ namespace MGT_Randomizer
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+        }
+
+        private void Senha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+                Randomize_Click(sender, e);
         }
     }
 }

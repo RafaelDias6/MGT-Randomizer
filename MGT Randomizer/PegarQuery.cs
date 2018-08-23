@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +12,8 @@ namespace MGT_Randomizer
     {
         private string Comando;
         public static int X { get; private set; }
+        public static int B
+        { get; private set; }
         public void ExecutarQuery(int v)
         {
             //****************Lista de variaveis****************
@@ -38,14 +40,17 @@ namespace MGT_Randomizer
                              "$" + rdr["jogo"].ToString());//Salvar resultado da query em lista
             }
             //********************************************************************
+
+            var drive = Updater.Credencial(); //Abre a conexão com serviço do drive
+            Updater.Download(drive); //Baixa blacklist.txt
+
             if (File.Exists(Form1.Caminho + @"/Blacklist.txt")) //Checa se existe blacklist.txt
             {
                 ListaNegra = File.ReadAllLines(Form1.Caminho +
                     @"\Blacklist.txt").ToList(); //Leitor do Blacklist.txt
+                resultado = num_jogo.Except(ListaNegra).ToList();//Exclusão das entries num_jogo que possui na Blacklist
             }
-            else { File.CreateText(Form1.Caminho + @"/Blacklist.txt").Close(); } //Cria Blacklist.txt
             //********************************************************************
-            resultado = num_jogo.Except(ListaNegra).ToList();//Exclusão das entries num_jogo que possui na Blacklist
             Random rnd = new Random(); //Método de aleatoriedade do .net
             if (resultado.Any())//Se resultado não for nulo
             {
@@ -53,11 +58,14 @@ namespace MGT_Randomizer
                 X = rnd.Next(1, X);//Selecionar de 1 até nº de entradas do resultado
                 string Texto = resultado[X - 1] + Environment.NewLine; //x-1 por Array começar em 0
                 File.AppendAllText(Form1.Caminho + @"\Blacklist.txt", Texto, Encoding.UTF8);//Serve para adcionar texto no arquivo
+                
                 X = Convert.ToInt32(Texto.PegarAte());//Método para pegar apenas o jogo_id no blacklist.txt
                 Regra.JogoSelecionado = X;
             }
             else { MessageBox.Show("Não há mais jogos nessa Pool"); X = 0; }//x=0 para utilizar-lo como verificador no form1
             con.Close();
+
+            Updater.Upload(drive); // Faz o upload do blacklist.txt atualizado para o drive
         }
         private void Consulta(int v)
         {
